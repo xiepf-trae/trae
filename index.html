@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>谢师傅水电服务 - 家装水电安装 · 改造 · 维修</title>
+<meta name="description" content="20年家装水电老师傅，专业水路改造、电路改造、灯具卫浴安装、漏水跳闸维修，当日上门，明码标价，质保2年。">
+<meta name="keywords" content="水电改造,电路改造,水路改造,水电维修,灯具安装,卫浴安装,漏水维修,跳闸维修,家装水电,水电师傅">
+<meta name="author" content="谢师傅水电服务">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://xiesf.gitee.io/shuidian/">
+<!-- Open Graph 社交分享 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="谢师傅水电服务 - 家装水电安装 · 改造 · 维修">
+<meta property="og:description" content="20年家装水电老师傅，水路改造、电路改造、灯具卫浴安装、漏水跳闸维修，当日上门，明码标价，质保2年。">
+<meta property="og:image" content="images/1.jpg">
+<meta property="og:locale" content="zh_CN">
+<!-- 本地商家结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "谢师傅水电服务",
+  "description": "20年家装水电老师傅，专业水路改造、电路改造、灯具卫浴安装、漏水跳闸维修",
+  "telephone": "+86-13489878126",
+  "priceRange": "￥",
+  "areaServed": "本市区及周边30公里",
+  "openingHours": "Mo-Su 08:00-20:00"
+}
+</script>
+<!--
+  ============================================================
+  使用说明（发布前可删除本注释）：
+  1. ✅ 电话已设置：13489878126（谢师傅）
+  2. ✅ 微信号已按"微信同号"设置为 13489878126，如不是请全局搜索修改
+  3. 全局搜索 "本市区" 修改服务区域
+  4. 收费标准在"收费标准"表格里直接改数字即可
+  5. 工地照片：页面底部 CASE_PHOTOS 列表里增删改
+     （加照片=images文件夹放图+照格式加一行；删照片=删那一行；改文字=直接改引号里的字）
+     首页大背景图 = HERO_IMAGE 那一行
+  6. 微信二维码：images/11.jpg（换二维码直接覆盖同名文件即可）
+  7. 工地视频：视频上传到B站 → 把BV号加到页面底部 VIDEOS 列表（无需本地视频文件）
+  ============================================================
+-->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --blue: #0f4c81;
+    --blue-dark: #0a3a63;
+    --amber: #f59e0b;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --bg: #f6f8fb;
+    --card: #ffffff;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(15, 40, 80, .08);
+  }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+  }
+
+  img { display: block; max-width: 100%; }
+  a { text-decoration: none; color: inherit; }
+  ul { list-style: none; }
+
+  .container { width: min(1120px, 92%); margin: 0 auto; }
+
+  /* ---------- 顶部导航 ---------- */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 10px rgba(15, 40, 80, .06);
+  }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: var(--blue); }
+  .logo .icon {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--blue), #2d7dd2);
+    color: #fff; display: grid; place-items: center; font-size: 20px;
+  }
+  .logo small { color: var(--amber); font-size: 12px; font-weight: 600; display: block; line-height: 1.2; }
+  nav ul { display: flex; gap: 28px; }
+  nav a { font-size: 15px; color: var(--text); font-weight: 500; transition: color .2s; }
+  nav a:hover { color: var(--blue); }
+  .nav-phone {
+    background: var(--amber); color: #fff; font-weight: 700;
+    padding: 9px 18px; border-radius: 999px; font-size: 15px;
+    transition: transform .2s;
+  }
+  .nav-phone:hover { transform: translateY(-2px); }
+
+  .menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 6px; }
+  .menu-btn span { display: block; width: 24px; height: 3px; background: var(--blue); margin: 5px 0; border-radius: 2px; transition: .3s; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative; min-height: 640px;
+    display: flex; align-items: center;
+    color: #fff;
+    background:
+      linear-gradient(100deg, rgba(6, 30, 58, .92) 25%, rgba(10, 58, 99, .55) 65%, rgba(10, 58, 99, .25)),
+      url("images/1.jpg") center / cover no-repeat;
+  }
+  .hero-inner { padding: 100px 0; max-width: 640px; }
+  .hero .tag {
+    display: inline-block; background: rgba(245, 158, 11, .18); border: 1px solid var(--amber);
+    color: #fcd34d; font-size: 14px; padding: 5px 14px; border-radius: 999px; margin-bottom: 20px;
+  }
+  .hero h1 { font-size: clamp(30px, 5vw, 48px); line-height: 1.25; margin-bottom: 18px; }
+  .hero h1 em { font-style: normal; color: #fbbf24; }
+  .hero p { font-size: 17px; color: #dbe7f3; margin-bottom: 32px; }
+  .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 13px 28px; border-radius: 999px; font-size: 16px; font-weight: 700;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-primary { background: var(--amber); color: #fff; box-shadow: 0 8px 20px rgba(245, 158, 11, .35); }
+  .btn-ghost { border: 2px solid rgba(255, 255, 255, .6); color: #fff; }
+  .btn-ghost:hover { background: rgba(255, 255, 255, .12); }
+
+  /* ---------- 数据条 ---------- */
+  .stats { background: var(--card); box-shadow: var(--shadow); }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .stat { text-align: center; padding: 28px 10px; border-right: 1px solid #eef2f7; }
+  .stat:last-child { border-right: none; }
+  .stat b { display: block; font-size: 30px; color: var(--blue); }
+  .stat b i { font-style: normal; color: var(--amber); }
+  .stat span { font-size: 14px; color: var(--muted); }
+
+  /* ---------- 通用 Section ---------- */
+  section { padding: 76px 0; }
+  .sec-head { text-align: center; margin-bottom: 46px; }
+  .sec-head .label { color: var(--amber); font-weight: 700; font-size: 14px; letter-spacing: 2px; }
+  .sec-head h2 { font-size: clamp(24px, 3.4vw, 34px); margin: 6px 0 10px; color: var(--blue-dark); }
+  .sec-head p { color: var(--muted); }
+
+  /* ---------- 服务项目 ---------- */
+  .services { background: var(--bg); }
+  .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px; }
+  .service-card {
+    background: var(--card); border-radius: var(--radius); padding: 30px 26px;
+    box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s;
+    border-top: 3px solid transparent;
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(15, 40, 80, .13); border-top-color: var(--amber); }
+  .service-card .emoji {
+    width: 54px; height: 54px; border-radius: 14px; display: grid; place-items: center;
+    font-size: 27px; background: linear-gradient(135deg, #e8f1fa, #d3e5f5); margin-bottom: 16px;
+  }
+  .service-card h3 { font-size: 19px; margin-bottom: 8px; color: var(--blue-dark); }
+  .service-card p { font-size: 14.5px; color: var(--muted); }
+
+  /* ---------- 案例展示 ---------- */
+  .cases { background: #fff; }
+  .case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .case-item {
+    position: relative; border-radius: var(--radius); overflow: hidden;
+    aspect-ratio: 3 / 4; box-shadow: var(--shadow); cursor: pointer;
+  }
+  .case-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+  .case-item:hover img { transform: scale(1.06); }
+  .case-item .cap {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 40px 16px 14px; color: #fff; font-size: 15px; font-weight: 600;
+    background: linear-gradient(transparent, rgba(6, 30, 58, .85));
+  }
+  .case-item .cap small { display: block; font-weight: 400; font-size: 12.5px; color: #cfdcea; }
+  .case-more {
+    margin-top: 26px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+    justify-content: center; text-align: center;
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    border-radius: var(--radius); padding: 22px 28px; color: #fff; box-shadow: var(--shadow);
+  }
+  .case-more .wx-ico { font-size: 32px; line-height: 1; }
+  .case-more b { font-size: 17px; display: block; }
+  .case-more .sub { font-size: 14px; color: #cfe0f0; }
+  .case-more-btn {
+    background: var(--amber); color: #fff; font-weight: 700;
+    padding: 11px 26px; border-radius: 999px; white-space: nowrap;
+    transition: transform .2s;
+  }
+  .case-more-btn:hover { transform: translateY(-2px); }
+
+  /* ---------- 视频展示 ---------- */
+  .videos { background: var(--bg); }
+  .video-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 560px));
+    gap: 20px; justify-content: center;
+  }
+  .video-item { background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+  .video-item .bili-wrap { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #000; }
+  .video-item .bili-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+  .video-item .v-cap { padding: 14px 18px; }
+  .video-item .v-cap b { display: block; font-size: 15.5px; }
+  .video-item .v-cap small { color: var(--muted); font-size: 13px; }
+  .video-empty {
+    grid-column: 1 / -1; text-align: center; padding: 46px 20px;
+    border: 2px dashed #c9d8e8; border-radius: var(--radius);
+    color: var(--muted); font-size: 14.5px; background: #fff;
+  }
+  .video-empty b { color: var(--blue); }
+
+  /* ---------- 微信二维码卡片 ---------- */
+  .qr-card {
+    display: flex; gap: 16px; align-items: center;
+    background: rgba(255, 255, 255, .07);
+    border: 1px dashed rgba(255, 255, 255, .35);
+    border-radius: 12px; padding: 14px; margin-top: 4px;
+  }
+  .qr-card img { width: 112px; height: 112px; object-fit: cover; border-radius: 8px; background: #fff; padding: 5px; flex-shrink: 0; }
+  .qr-card b { display: block; font-size: 15px; color: #fff; margin-bottom: 4px; }
+  .qr-card span { font-size: 13px; color: #c8d9ea; }
+
+  /* ---------- 收费标准 ---------- */
+  .price { background: var(--bg); }
+  .price-table {
+    width: 100%; border-collapse: collapse; background: #fff;
+    border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+  }
+  .price-table th {
+    background: var(--blue); color: #fff; padding: 15px 18px;
+    text-align: left; font-size: 15.5px; font-weight: 600;
+  }
+  .price-table td { padding: 14px 18px; border-bottom: 1px solid #eef2f7; font-size: 15px; }
+  .price-table tr:last-child td { border-bottom: none; }
+  .price-table tr:nth-child(even) td { background: #f8fafd; }
+  .price-table td.money { color: #d97706; font-weight: 700; white-space: nowrap; }
+  .price-note { text-align: center; color: var(--muted); font-size: 13.5px; margin-top: 16px; }
+
+  /* ---------- 服务优势 ---------- */
+  .why { background: #fff; }
+  .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .why-card { text-align: center; padding: 30px 18px; border-radius: var(--radius); background: var(--bg); transition: transform .25s; }
+  .why-card:hover { transform: translateY(-5px); }
+  .why-card .num { font-size: 34px; font-weight: 800; color: var(--amber); }
+  .why-card h3 { margin: 8px 0 6px; font-size: 17px; color: var(--blue-dark); }
+  .why-card p { font-size: 13.5px; color: var(--muted); }
+
+  /* ---------- 联系我们 ---------- */
+  .contact { background: linear-gradient(135deg, var(--blue-dark), var(--blue)); color: #fff; }
+  .contact .sec-head h2 { color: #fff; }
+  .contact .sec-head p { color: #c8d9ea; }
+  .contact-wrap { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: start; }
+  .contact-info h3 { font-size: 22px; margin-bottom: 18px; }
+  .contact-line { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 20px; }
+  .contact-line .ico {
+    width: 46px; height: 46px; border-radius: 12px; flex: none;
+    background: rgba(255, 255, 255, .12); display: grid; place-items: center; font-size: 21px;
+  }
+  .contact-line b { display: block; font-size: 15px; }
+  .contact-line span { color: #c8d9ea; font-size: 14px; }
+  .contact-line .big { font-size: 24px; font-weight: 800; color: #fbbf24; letter-spacing: 1px; }
+
+  .form-card { background: #fff; border-radius: var(--radius); padding: 30px; color: var(--text); box-shadow: 0 18px 40px rgba(0, 0, 0, .2); }
+  .form-card h3 { color: var(--blue-dark); margin-bottom: 20px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-card input, .form-card select, .form-card textarea {
+    width: 100%; padding: 12px 14px; margin-bottom: 14px;
+    border: 1.5px solid #dce4ee; border-radius: 10px; font-size: 15px;
+    font-family: inherit; background: #fafbfd; transition: border .2s;
+  }
+  .form-card input:focus, .form-card select:focus, .form-card textarea:focus {
+    outline: none; border-color: var(--blue); background: #fff;
+  }
+  .form-card textarea { resize: vertical; min-height: 90px; }
+  .form-card button {
+    width: 100%; padding: 14px; border: none; border-radius: 10px;
+    background: var(--amber); color: #fff; font-size: 16px; font-weight: 700; cursor: pointer;
+    transition: background .2s;
+  }
+  .form-card button:hover { background: #d97706; }
+
+  /* ---------- 页脚 ---------- */
+  footer { background: #082643; color: #9fb3c8; text-align: center; padding: 26px 0; font-size: 14px; }
+  footer b { color: #fff; }
+
+  /* ---------- 回到顶部 ---------- */
+  .to-top {
+    position: fixed; right: 22px; bottom: 26px; width: 46px; height: 46px;
+    border-radius: 50%; border: none; background: var(--blue); color: #fff;
+    font-size: 20px; cursor: pointer; box-shadow: var(--shadow);
+    opacity: 0; pointer-events: none; transition: opacity .3s, transform .2s; z-index: 99;
+  }
+  .to-top.show { opacity: 1; pointer-events: auto; }
+  .to-top:hover { transform: translateY(-3px); }
+
+  /* ---------- 滚动入场动画 ---------- */
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: .1s; }
+  .reveal-delay-2 { transition-delay: .2s; }
+  .reveal-delay-3 { transition-delay: .3s; }
+
+  /* 表单复制成功提示 */
+  .copy-tip {
+    display: none; margin-top: 12px; padding: 12px 14px;
+    background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px;
+    color: #16a34a; font-size: 14px; text-align: center;
+  }
+  .copy-tip.show { display: block; animation: fadeInUp .3s ease; }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width: 900px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat:nth-child(2) { border-right: none; }
+    .case-grid { grid-template-columns: repeat(2, 1fr); }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .contact-wrap { grid-template-columns: 1fr; }
+    nav ul {
+      position: absolute; top: 64px; left: 0; right: 0;
+      background: #fff; flex-direction: column; gap: 0;
+      box-shadow: 0 12px 20px rgba(15, 40, 80, .1);
+      max-height: 0; overflow: hidden; transition: max-height .35s;
+    }
+    nav ul.open { max-height: 400px; }
+    nav ul li { border-bottom: 1px solid #eef2f7; }
+    nav ul a { display: block; padding: 14px 6%; }
+    .menu-btn { display: block; }
+    .nav-phone { display: none; }
+  }
+  @media (max-width: 560px) {
+    .hero { min-height: 560px; }
+    .hero-inner { padding: 80px 0; }
+    .case-grid, .video-grid, .form-row { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    /* 手机上价格表变卡片式，避免横向挤压 */
+    .price-table { background: none; box-shadow: none; overflow: visible; }
+    .price-table thead { display: none; }
+    .price-table tbody, .price-table tr, .price-table td { display: block; width: 100%; }
+    .price-table tr { background: #fff; border-radius: 12px; margin-bottom: 12px; padding: 14px 16px; box-shadow: 0 2px 10px rgba(15,40,80,.06); }
+    .price-table td { padding: 3px 0; border-bottom: none; background: none !important; }
+    .price-table td.money { font-size: 18px; }
+    .price-table td:last-child { color: var(--muted); font-size: 13.5px; }
+  }
+
+  /* 手机底部常驻：一键拨号 / 在线预约（电脑端隐藏） */
+  .mobile-bar { display: none; }
+  @media (max-width: 900px) {
+    .mobile-bar {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 98;
+      display: flex; gap: 10px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+      background: #fff; box-shadow: 0 -4px 18px rgba(15,40,80,.12);
+    }
+    .mobile-bar a { flex: 1; text-align: center; padding: 12px 0; border-radius: 999px; font-weight: 700; font-size: 15px; }
+    .mobile-bar .mb-call { background: var(--amber); color: #fff; }
+    .mobile-bar .mb-book { background: #eef4fa; color: var(--blue); }
+    body { padding-bottom: 64px; }
+    .to-top { bottom: 84px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ======= 顶部导航 ======= -->
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">
+      <span class="icon">💧</span>
+      <span>谢师傅水电<small>专业安装 · 改造 · 维修</small></span>
+    </a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#services">服务项目</a></li>
+        <li><a href="#cases">案例展示</a></li>
+        <li><a href="#videos">视频展示</a></li>
+        <li><a href="#price">收费标准</a></li>
+        <li><a href="#why">服务优势</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </nav>
+    <a class="nav-phone" href="tel:13489878126">📞 13489878126</a>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ======= 首屏 ======= -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <span class="tag">⚡ 20年老师傅 · 持证上岗</span>
+      <h1>家装水电，<em>放心交给我</em><br>水路改造 · 电路改造 · 安装维修</h1>
+      <p>水电是房子的"血管"和"神经"，一次做对，安心二十年。明码标价、当日上门、质保两年，市区内最快 2 小时响应。</p>
+      <div class="hero-btns">
+        <a class="btn btn-primary" href="tel:13489878126">📞 立即电话预约</a>
+        <a class="btn btn-ghost" href="#contact">在线预约上门</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 数据条 ======= -->
+<div class="stats">
+  <div class="container stats-grid">
+    <div class="stat"><b>20<i>+</i></b><span>年从业经验</span></div>
+    <div class="stat"><b>3000<i>+</i></b><span>服务家庭</span></div>
+    <div class="stat"><b>2<i>小时</i></b><span>市区应急响应</span></div>
+    <div class="stat"><b>2<i>年</i></b><span>水电工程质保</span></div>
+  </div>
+</div>
+
+<!-- ======= 服务项目 ======= -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="label">SERVICE</div>
+      <h2>服务项目</h2>
+      <p>一手抓水、一手抓电，全屋水电问题都能解决</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="emoji">🚿</div>
+        <h3>水路改造</h3>
+        <p>PPR 管热熔焊接、上下水改造、厨卫水管移位、卫生间防水处理，打压验收合格后封槽。</p>
+      </div>
+      <div class="service-card">
+        <div class="emoji">⚡</div>
+        <h3>电路改造</h3>
+        <p>暗线布线、配电箱安装与整理、开关插座移位加装、强弱电分离，国标铜线规范施工。</p>
+      </div>
+      <div class="service-card">
+        <div class="emoji">💡</div>
+        <h3>灯具安装</h3>
+        <p>吸顶灯、吊灯、轨道灯、浴霸、镜前灯安装，大重量吊灯加固处理，接线安全规范。</p>
+      </div>
+      <div class="service-card">
+        <div class="emoji">🛁</div>
+        <h3>卫浴安装</h3>
+        <p>马桶、浴室柜、花洒、龙头、电热水器 / 燃气热水器安装，角阀软管一应配齐。</p>
+      </div>
+      <div class="service-card">
+        <div class="emoji">🔧</div>
+        <h3>维修排查</h3>
+        <p>漏水检测、跳闸断电排查、水压不稳、下水堵塞疏通，小病当场修，不乱收费。</p>
+      </div>
+      <div class="service-card">
+        <div class="emoji">🏠</div>
+        <h3>新房水电全包</h3>
+        <p>新房装修 / 旧房翻新水电全包，现场放样定位，横平竖直走线，完工出水电走向图。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 案例展示 ======= -->
+<section class="cases" id="cases">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="label">GALLERY</div>
+      <h2>案例展示</h2>
+      <p>每一个工地都按标准施工，经得起验收</p>
+    </div>
+    <!-- 照片由页面底部 CASE_PHOTOS 配置自动生成，增/删/改请到那里操作 -->
+    <div class="case-grid" id="caseGrid"></div>
+    <div class="case-more">
+      <span class="wx-ico">💬</span>
+      <div>
+        <b>想看更多工地实拍？</b>
+        <span class="sub">微信 / 电话 <b style="color:#fbbf24">13489878126</b>（谢师傅），发您同小区在建工地现场</span>
+      </div>
+      <a class="case-more-btn" href="tel:13489878126">📞 电话咨询</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 视频展示 ======= -->
+<section class="videos" id="videos">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="label">VIDEO</div>
+      <h2>工地视频</h2>
+      <p>实拍施工过程，手艺看得见</p>
+    </div>
+    <!-- 视频由页面底部 VIDEOS 配置自动生成，上传/更换视频请到那里操作 -->
+    <div class="video-grid" id="videoGrid"></div>
+  </div>
+</section>
+
+<!-- ======= 收费标准 ======= -->
+<section class="price" id="price">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="label">PRICE</div>
+      <h2>收费标准</h2>
+      <p>明码标价 · 先报价后施工 · 无隐形消费</p>
+    </div>
+    <table class="price-table">
+      <thead>
+        <tr><th>服务项目</th><th>参考价格</th><th>说明</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>新房水电全包</td><td class="money">45-60 元/㎡</td><td>按建筑面积计，人工+辅料，主材可包可自购</td></tr>
+        <tr><td>水路改造</td><td class="money">45-60 元/米</td><td>PPR 热熔焊接，含开槽、布管、打压验收</td></tr>
+        <tr><td>电路改造</td><td class="money">35-50 元/米</td><td>国标铜线，含开槽、穿管、布线、测线</td></tr>
+        <tr><td>开关插座安装 / 移位</td><td class="money">10-30 元/个</td><td>普通面板安装，移位视走线距离而定</td></tr>
+        <tr><td>灯具安装</td><td class="money">30-100 元/盏</td><td>吸顶灯 / 吊灯 / 轨道灯，大型艺术吊灯另议</td></tr>
+        <tr><td>马桶 / 浴室柜安装</td><td class="money">80-150 元/套</td><td>含角阀软管配件，打胶收口</td></tr>
+        <tr><td>热水器安装</td><td class="money">100-200 元/台</td><td>电热水器 / 燃气热水器，含固定与接驳</td></tr>
+        <tr><td>漏水 / 跳闸检修</td><td class="money">上门费 50 元起</td><td>检出问题后维修费用单独报价，修好再收</td></tr>
+      </tbody>
+    </table>
+    <p class="price-note">以上为参考价，具体以现场勘察后报价为准 · 材料可包工包料，也可自购我只收人工</p>
+  </div>
+</section>
+
+<!-- ======= 服务优势 ======= -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="label">WHY US</div>
+      <h2>为什么选择我</h2>
+      <p>手艺+实在+售后，做的是回头客生意</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="num">20年</div>
+        <h3>老师傅手艺</h3>
+        <p>从业 20 年，持电工证上岗，各类水电难题都见过、都修过</p>
+      </div>
+      <div class="why-card">
+        <div class="num">0加价</div>
+        <h3>明码标价</h3>
+        <p>先报价、后施工，做完按报价单收钱，绝不中途加价</p>
+      </div>
+      <div class="why-card">
+        <div class="num">2小时</div>
+        <h3>极速上门</h3>
+        <p>市区内最快 2 小时上门，漏水跳闸等急修 24 小时可约</p>
+      </div>
+      <div class="why-card">
+        <div class="num">2年保</div>
+        <h3>质保售后</h3>
+        <p>水电工程质保 2 年，维修项目保修 90 天，有问题免费返工</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 联系我们 ======= -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="label">CONTACT</div>
+      <h2>预约上门</h2>
+      <p>电话直接聊最快，也可以留言我抽空回电</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <h3>联系方式</h3>
+        <div class="contact-line">
+          <div class="ico">📞</div>
+          <div>
+            <b>服务热线（谢师傅）</b>
+            <span class="big">13489878126</span>
+          </div>
+        </div>
+        <div class="contact-line">
+          <div class="ico">💬</div>
+          <div>
+            <b>微信同号</b>
+            <span>13489878126（加微信发现场照片，报价更快）</span>
+          </div>
+        </div>
+        <div class="qr-card">
+          <img src="images/11.jpg" alt="谢师傅微信二维码，扫码加好友">
+          <div>
+            <b>微信扫码加我</b>
+            <span>扫一扫二维码加好友，发户型图 / 现场照片，报价更快</span>
+          </div>
+        </div>
+        <div class="contact-line">
+          <div class="ico">📍</div>
+          <div>
+            <b>服务区域</b>
+            <span>本市区及周边 30 公里，郊区提前一天预约</span>
+          </div>
+        </div>
+        <div class="contact-line">
+          <div class="ico">🕗</div>
+          <div>
+            <b>上门时间</b>
+            <span>每天 8:00 - 20:00 · 急修 24 小时响应</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form-card" id="bookForm">
+        <h3>在线预约</h3>
+        <div class="form-row">
+          <input type="text" id="fName" placeholder="您的称呼" required>
+          <input type="tel" id="fPhone" placeholder="联系电话" required>
+        </div>
+        <select id="fType">
+          <option value="水路改造">水路改造</option>
+          <option value="电路改造">电路改造</option>
+          <option value="灯具安装">灯具安装</option>
+          <option value="卫浴安装">卫浴安装</option>
+          <option value="漏水 / 跳闸维修">漏水 / 跳闸维修</option>
+          <option value="新房水电全包">新房水电全包</option>
+          <option value="其他">其他</option>
+        </select>
+        <textarea id="fMsg" placeholder="简单描述一下情况，例如：卫生间马桶漏水 / 新房 100㎡ 需要水电改造…"></textarea>
+        <button type="submit">提交预约</button>
+        <p class="copy-tip" id="formTip">✅ 预约信息已复制到剪贴板，请打开微信粘贴发送给谢师傅（13489878126），我会尽快回电！</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ======= 页脚 ======= -->
+<footer>
+  <div class="container">
+    <p><b>谢师傅水电服务</b> · 水路改造 / 电路改造 / 灯具卫浴安装 / 维修排查</p>
+    <p>服务热线：<b>13489878126</b>（微信同号）</p>
+    <p id="year"></p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<!-- 手机底部拨号栏（电脑上自动隐藏） -->
+<div class="mobile-bar">
+  <a class="mb-call" href="tel:13489878126">📞 一键拨号</a>
+  <a class="mb-book" href="#contact">📝 在线预约</a>
+</div>
+
+<script>
+  // ★ 照片管理：加照片=images文件夹放图+下面加一行；删照片=删那一行；改文字=直接改
+  // 换首页大背景改 HERO_IMAGE。每行格式：{ src:'images/文件名', title:'分类', subtitle:'说明' }
+  var CASE_PHOTOS = [
+    { src: 'images/1.jpg', title: '电路改造', subtitle: '红蓝分色 · 横平竖直排管' },
+    { src: 'images/2.jpg', title: '电路改造', subtitle: '大弯弧度布管 · 后期换线顺畅' },
+    { src: 'images/3.jpg', title: '电路改造', subtitle: '配电箱安装 · 回路清晰' },
+    { src: 'images/4.jpg', title: '电路改造', subtitle: '转角大弯 · 管卡固定到位' },
+    { src: 'images/5.jpg', title: '水电改造', subtitle: '走廊走管 · 间距均匀一致' },
+    { src: 'images/6.jpg', title: '电路改造', subtitle: '强弱电箱定位 · 管线整齐入盒' },
+    { src: 'images/7.jpg', title: '电路改造', subtitle: '弯管入盒 · 卡扣定位牢固' },
+    { src: 'images/8.jpg', title: '水路改造', subtitle: '厨卫水管走顶 · 热水管包保温棉' },
+    { src: 'images/9.jpg', title: '水电改造', subtitle: '全屋纵铺 · 一线到底少接头' }
+  ];
+  var HERO_IMAGE = 'images/1.jpg';
+
+  // 按配置生成照片墙
+  var caseGrid = document.getElementById('caseGrid');
+  CASE_PHOTOS.forEach(function (p) {
+    var item = document.createElement('div');
+    item.className = 'case-item';
+    item.innerHTML = '<img src="' + p.src + '" alt="' + p.subtitle + '" loading="lazy">' +
+      '<div class="cap">' + p.title + '<small>' + p.subtitle + '</small></div>';
+    caseGrid.appendChild(item);
+  });
+
+  // 首页大背景图（跟随 HERO_IMAGE 配置）
+  document.querySelector('.hero').style.background =
+    'linear-gradient(100deg, rgba(6,30,58,.92) 25%, rgba(10,58,99,.55) 65%, rgba(10,58,99,.25)), url("' + HERO_IMAGE + '") center / cover no-repeat';
+
+  // ★ 视频管理：使用 B站嵌入播放（免流量、自动转码、微信内可播）
+  // B站视频：type:'bili', bvid:'BVxxxx'（从视频页网址里复制 BV 开头那串）
+  // 加视频=照格式加一行；删视频=删那一行；改文字=直接改引号里的字
+  var VIDEOS = [
+    { type: 'bili', bvid: 'BV1knYZ6SEMj', title: '家装水电是关键', desc: '实拍施工工艺 · 红蓝分色横平竖直' },
+    { type: 'bili', bvid: 'BV1rpYZ6EEzC', title: '工地实拍花絮', desc: '记录施工日常' }
+  ];
+
+  var videoGrid = document.getElementById('videoGrid');
+  if (!VIDEOS.length) {
+    videoGrid.innerHTML = '<div class="video-empty">🎬 视频位已就绪：把视频传到B站，把BV号加到页面底部 VIDEOS 列表，手机电脑都能流畅播放</div>';
+  } else {
+    VIDEOS.forEach(function (v) {
+      var item = document.createElement('div');
+      item.className = 'video-item';
+      // B站嵌入播放：免流量、自动转码、微信内可播
+      var media = document.createElement('div');
+      media.className = 'bili-wrap';
+      media.innerHTML = '<iframe src="https://player.bilibili.com/player.html?bvid=' + v.bvid + '&high_quality=1&danmaku=0&page=1"' +
+        ' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>';
+      item.appendChild(media);
+      var cap = document.createElement('div');
+      cap.className = 'v-cap';
+      cap.innerHTML = '<b></b><small></small>';
+      cap.querySelector('b').textContent = v.title;
+      cap.querySelector('small').textContent = v.desc;
+      item.appendChild(cap);
+      videoGrid.appendChild(item);
+    });
+  }
+
+  // 移动端菜单
+  var menu = document.getElementById('menu');
+  var menuBtn = document.getElementById('menuBtn');
+  menuBtn.addEventListener('click', function () { menu.classList.toggle('open'); });
+  menu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () { menu.classList.remove('open'); });
+  });
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function () {
+    toTop.classList.toggle('show', window.scrollY > 400);
+  });
+  toTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // 预约表单：提交后生成预约文本并复制到剪贴板，用户粘贴到微信发送给谢师傅
+  document.getElementById('bookForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('fName').value.trim();
+    var phone = document.getElementById('fPhone').value.trim();
+    var type = document.getElementById('fType').value;
+    var msg = document.getElementById('fMsg').value.trim();
+    if (!name || !phone) return;
+    // 拼接预约信息文本
+    var text = '【水电预约】\n' +
+      '称呼：' + name + '\n' +
+      '电话：' + phone + '\n' +
+      '项目：' + type + '\n' +
+      '备注：' + (msg || '无');
+    // 复制到剪贴板
+    var copyOk = false;
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { copyOk = true; });
+    }
+    // 降级方案：用临时 textarea 复制
+    if (!copyOk) {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); copyOk = true; } catch (err) {}
+      document.body.removeChild(ta);
+    }
+    var tip = document.getElementById('formTip');
+    if (copyOk) {
+      tip.innerHTML = '✅ 预约信息已复制到剪贴板，请打开微信粘贴发送给谢师傅（13489878126），我会尽快回电！';
+    } else {
+      tip.innerHTML = '📋 请手动复制以下信息发送给谢师傅：<br>' + text.replace(/\n/g, '<br>');
+    }
+    tip.classList.add('show');
+    this.reset();
+    setTimeout(function () { tip.classList.remove('show'); }, 8000);
+  });
+
+  // 年份
+  document.getElementById('year').textContent = '© ' + new Date().getFullYear() + ' 谢师傅水电服务 · 本地家庭水电维修安装';
+
+  // 滚动入场动画：元素进入视口时添加 visible 类
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    // 不支持 IntersectionObserver 的浏览器直接显示
+    reveals.forEach(function (el) { el.classList.add('visible'); });
+  }
+</script>
+</body>
+</html>
