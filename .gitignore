@@ -1,0 +1,12 @@
+# ---- 本地工具文件，不上传到网站 ----
+sample_tiworker.ps1
+watch_tiworker.ps1
+repair_dism.ps1
+install_updates.ps1
+deploy.ps1
+一键上传.bat
+
+# ---- 系统临时文件 ----
+Thumbs.db
+desktop.ini
+.DS_Store
